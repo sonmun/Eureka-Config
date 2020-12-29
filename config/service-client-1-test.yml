@@ -1,0 +1,11 @@
+server:
+  port: 6001
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://EurekaServer1:9002/eureka/
+#      defaultZone: http://EurekaServer2:9003/eureka/
+  instance:
+    preferIpAddress: true  
